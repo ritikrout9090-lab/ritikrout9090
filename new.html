@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Developer Portfolio</title>
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#0f172a;color:white}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 10%;background:#020617}
+header h1{margin:0;font-size:22px}
+nav a{color:white;margin-left:20px;text-decoration:none;font-size:14px}
+.hero{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 20px}
+.hero img{width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid #38bdf8}
+.hero h2{font-size:32px;margin:20px 0 10px}
+.hero p{max-width:600px;color:#cbd5f5}
+section{padding:60px 10%}
+.section-title{font-size:26px;margin-bottom:30px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skill{background:#1e293b;padding:10px 15px;border-radius:6px;font-size:14px}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.project{background:#1e293b;padding:20px;border-radius:10px}
+.project h3{margin-top:0}
+.contact{text-align:center}
+footer{text-align:center;padding:20px;background:#020617;font-size:14px;color:#94a3b8}
+button{background:#38bdf8;border:none;padding:10px 18px;border-radius:6px;cursor:pointer;margin-top:15px}
+button:hover{opacity:.9}
+</style>
+</head>
+<body>
+
+<header>
+<h1>My Portfolio</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<img src="C:\Users\ritik\OneDrive\Desktop\protfolio\profile.jpg.jpg" alt="profile">
+<h2>Hello, I'm a Web Developer</h2>
+<p>I build responsive websites and work with databases using SQL and PL/SQL.</p>
+<button onclick="scrollToContact()">Hire Me</button>
+</section>
+
+<section id="about">
+<h2 class="section-title">About Me</h2>
+<p>I am a web developer skilled in HTML, CSS, JavaScript and database technologies like SQL and PL/SQL. I enjoy building responsive websites and solving real problems with code.</p>
+</section>
+
+<section id="skills">
+<h2 class="section-title">Skills</h2>
+<div class="skills">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">SQL</div>
+<div class="skill">PL/SQL</div>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="section-title">Projects</h2>
+<div class="projects">
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>A personal website to showcase my projects and skills.</p>
+</div>
+
+<div class="project">
+<h3>Student Database System</h3>
+<p>Database project built using SQL and PL/SQL.</p>
+</div>
+
+<div class="project">
+<h3>Responsive Landing Page</h3>
+<p>Modern landing page built with HTML, CSS and JavaScript.</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2 class="section-title">Contact</h2>
+<p>Email: ritikrout90902@email.com</p>
+<p>GitHub: github.com/yourusername</p>
+<p>mob no: 6372014250</p>
+</section>
+
+<footer>
+© 2026 My Portfolio
+</footer>
+
+<script>
+function scrollToContact(){
+ document.getElementById('contact').scrollIntoView({behavior:'smooth'})
+}
+</script>
+
+</body>
+</html>
